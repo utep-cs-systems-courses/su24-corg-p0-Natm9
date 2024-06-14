@@ -26,3 +26,11 @@ void print_triangle(int leftCol, int size)
   }
 }
 
+// Prints arrow using the already given commands
+void print_arrow(int leftCol, int size)
+{
+  int fixSquare = leftCol + (size-3);
+  print_triangle(leftCol, size);
+  print_square(fixSquare, size);
+  putchar('\n');
+}
